@@ -1,10 +1,10 @@
-package observer;
+package Observer;
 
-public class Jay implements Subscriber{
+public class John implements Subscriber{
     private String article;
     private Publisher publisher;
 
-    public Jay(Publisher publisher) {
+    public John(Publisher publisher) {
         this.publisher = publisher;
         publisher.registerSubscriber(this);
     }
@@ -16,6 +16,6 @@ public class Jay implements Subscriber{
     }
 
     private void display() {
-        System.out.println("Jay는 \'" + article + "\' 이라는 기사를 읽고 정보를 얻었습니다.");
+        System.out.println("John은 \'" + article + "\' 이라는 기사를 읽고 정보를 얻었습니다.");
     }
 }
