@@ -19,7 +19,7 @@ public class ArrSchool {
         index++;
     }
 
-    public StudentInfo[] getStudentInfos() {
-        return studentInfos;
+    public Iterator createIterater() {
+        return new ArrSchoolIterator(studentInfos);
     }
 }

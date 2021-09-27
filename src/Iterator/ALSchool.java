@@ -1,7 +1,6 @@
 package Iterator;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ALSchool {
     ArrayList studentInfos;
@@ -19,7 +18,7 @@ public class ALSchool {
         studentInfos.add(studentInfo);
     }
 
-   public ArrayList getStudentInfos() {
-        return studentInfos;
+    public Iterator createIterater() {
+        return new ALSchoolIterator(studentInfos);
     }
 }
